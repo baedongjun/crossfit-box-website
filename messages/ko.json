@@ -7,6 +7,39 @@
     "readyToStart": "시작할 준비가 되셨나요?",
     "makeReservation": "예약하기",
     "dropIn": "드롭인"
+  },
+  "hello": "안녕하세요",
+  "nav": {
+    "title": "크로스핏 박스",
+    "home": "홈",
+    "reservation": "예약",
+    "dropIn": "드롭인",
+    "dietProject": "식단 프로젝트",
+    "signIn": "로그인",
+    "signOut": "로그아웃"
+  },
+  "reservation": {
+    "title": "예약",
+    "confirmation": {
+      "title": "예약 확인"
+    }
+  },
+  "dropIn": {
+    "title": "드롭인",
+    "confirmation": {
+      "title": "드롭인 확인"
+    }
+  },
+  "dietProject": {
+    "title": "식단 프로젝트"
+  },
+  "auth": {
+    "signIn": {
+      "title": "로그인"
+    }
+  },
+  "profile": {
+    "title": "프로필"
   }
 }
 

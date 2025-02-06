@@ -7,6 +7,16 @@
     "readyToStart": "Ready to Start?",
     "makeReservation": "Make a Reservation",
     "dropIn": "Drop In"
+  },
+  "hello": "Hello",
+  "nav": {
+    "title": "CrossFit Box",
+    "home": "Home",
+    "reservation": "Reservation",
+    "dropIn": "Drop-in",
+    "dietProject": "Diet Project",
+    "signIn": "Sign In",
+    "signOut": "Sign Out"
   }
 }
 

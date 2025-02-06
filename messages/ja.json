@@ -7,6 +7,16 @@
     "readyToStart": "始める準備はできましたか？",
     "makeReservation": "予約する",
     "dropIn": "ドロップイン"
+  },
+  "hello": "こんにちは",
+  "nav": {
+    "title": "クロスフィットボックス",
+    "home": "ホーム",
+    "reservation": "予約",
+    "dropIn": "ドロップイン",
+    "dietProject": "食事プロジェクト",
+    "signIn": "ログイン",
+    "signOut": "ログアウト"
   }
 }
 

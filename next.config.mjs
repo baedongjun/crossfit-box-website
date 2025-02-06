@@ -1,6 +1,12 @@
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin(
+  './app/i18n/request.ts'  // 경로 지정
+);
+
 let userConfig = undefined
 try {
-  userConfig = await import('./v0-user-next.config')
+  userConfig = await import('./next.config')
 } catch (e) {
   // ignore error
 }
@@ -45,4 +51,7 @@ function mergeConfig(nextConfig, userConfig) {
   }
 }
 
-export default nextConfig
+// next-intl이 middleware를 통해 작동하므로 
+// 기존 i18n 설정은 제거하거나 주석 처리해야 할 수 있습니다
+
+export default withNextIntl(nextConfig);
