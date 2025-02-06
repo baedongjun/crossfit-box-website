@@ -1,0 +1,34 @@
+// 기존 모델은 그대로 두고 아래 내용을 추가합니다.
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  accounts      Account[]
+  sessions      Session[]
+  profile       Profile?
+  prRecords     PRRecord[]
+}
+
+model Profile {
+  id          String   @id @default(cuid())
+  userId      String   @unique
+  bio         String?
+  dateOfBirth DateTime?
+  weight      Float?
+  height      Float?
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model PRRecord {
+  id        String   @id @default(cuid())
+  userId    String
+  exercise  String
+  weight    Float
+  reps      Int
+  date      DateTime
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
